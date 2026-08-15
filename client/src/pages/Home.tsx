@@ -57,7 +57,7 @@ export default function Home() {
           <h1>Conversa não é <em>entrevista.</em></h1>
           <p className="hero-lead">As mensagens que fazem uma mulher continuar interessada sem você precisar fingir ser alguém que não é.</p>
           <p className="hero-body">Aprenda a criar contexto, mostrar personalidade e conduzir uma conversa com mais clareza — sem manipulação, sem pressão e sem procurar a frase perfeita.</p>
-          <div className="hero-actions"><a className="button button-dark" href={checkoutBasico}>Quero conversar melhor <ArrowUpRight size={17} /></a><span><ShieldCheck size={17} /> Garantia de 7 dias</span></div>
+          <div className="hero-actions"><a className="button button-dark" href="#oferta">Quero conversar melhor <ArrowUpRight size={17} /></a><span><ShieldCheck size={17} /> Garantia de 7 dias</span></div>
           <div className="hero-note"><span>01</span><p>Para homens comuns que querem trocar ansiedade por presença.</p></div>
         </div>
         <div className="hero-visual"><div className="image-frame"><img src={HERO_IMAGE} alt="Lucas Martins sentado em um escritório simples" /><div className="image-caption"><span>LUCAS MARTINS</span></div></div><div className="vertical-word">CLAREZA / PRESENÇA / RESPEITO</div></div>
