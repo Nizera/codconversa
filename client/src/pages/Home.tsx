@@ -2,10 +2,10 @@
 import { useState } from "react";
 import { ArrowUpRight, Check, ChevronDown, Clock3, MessageCircle, ShieldCheck, Sparkles } from "lucide-react";
 
-const HERO_IMAGE = "/manus-storage/lucas-martins-hero_40aafad4.png";
-const NOTEBOOK_IMAGE = "/manus-storage/lucas-martins-notebook_6aa4d4e0.png";
-const CAFE_IMAGE = "/manus-storage/lucas-martins-cafe_e2d5596e.png";
-const MARK_IMAGE = "/manus-storage/codigo-da-conversa-mark_26a45792.png";
+const HERO_IMAGE = "/images/lucas-martins-hero.png";
+const NOTEBOOK_IMAGE = "/images/lucas-martins-notebook.jpg";
+const CAFE_IMAGE = "/images/lucas-martins-cafe.jpg";
+const MARK_IMAGE = "/images/codigo-da-conversa-mark.png";
 
 const faqs = [
   ["Preciso ser extrovertido?", "Não. O método favorece clareza, escuta e prática gradual, não performance social."],
