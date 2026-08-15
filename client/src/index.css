@@ -113,6 +113,16 @@ main { overflow: hidden; }
 .guarantee { display:grid; grid-template-columns:80px 1fr; gap:2rem; align-items:start; padding:7rem 20vw; background:#f6f5f1; }
 .guarantee-icon { width:58px; height:58px; display:grid; place-items:center; border:1px solid #b66a4c; color:#b66a4c; }
 .guarantee h2 { max-width:650px; }
+.testimonials { padding:8rem 12vw; background:#e7e5df; }
+.testimonials-head { margin-bottom:4rem; }
+.testimonials-head h2 { max-width:500px; }
+.testimonials-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.2rem; }
+.testimonial-card { display:flex; flex-direction:column; padding:2rem; background:#f6f5f1; border-top:2px solid #171717; }
+.testimonial-stars { display:flex; gap:.15rem; color:#b66a4c; margin-bottom:1.2rem; }
+.testimonial-card blockquote { flex:1; margin:0 0 1.5rem; color:#373633; font-size:.92rem; line-height:1.65; font-style:italic; }
+.testimonial-author { display:flex; align-items:center; gap:.8rem; }
+.testimonial-author img { width:42px; height:42px; border-radius:50%; object-fit:cover; filter:grayscale(1) contrast(1.05); }
+.testimonial-author span { font:600 .82rem 'Space Grotesk',sans-serif; color:#74736e; letter-spacing:.03em; }
 .faq { display:grid; grid-template-columns:.8fr 1.2fr; gap:8vw; padding:8rem 12vw; background:#121212; color:#f6f5f1; }
 .faq h2 { max-width:420px; }
 .faq-list { border-top:1px solid #4b4a46; }
@@ -126,6 +136,6 @@ footer { display:flex; align-items:center; justify-content:space-between; gap:2r
 .footer-brand img { width:25px; height:25px; object-fit:contain; }
 footer p { margin:0; }
 footer small { max-width:350px; line-height:1.45; text-align:right; }
-@media (max-width: 900px) { .site-header nav { display:none; } .hero { grid-template-columns:1fr; padding:5rem 7vw; } .hero-visual { justify-self:stretch; max-width:540px; margin:1rem auto 0; } .statement, .problem-grid, .method, .expert, .offer, .bumps, .faq { grid-template-columns:1fr; padding:5.5rem 7vw; gap:3rem; } .statement { grid-template-columns:40px 1fr; } .statement-aside { grid-column:2; } .method-image, .expert-photo { justify-self:start; max-width:500px; } .deliverables { padding:5.5rem 7vw; } .deliverables-head { display:block; } .deliverables-head > p { margin-top:1rem; } .guarantee { padding:5rem 7vw; } }
-@media (max-width: 600px) { .topline span:last-child { display:none; } .site-header { padding:0 5vw; } .header-cta { padding:.7rem .8rem; font-size:.65rem; } .hero { padding:4.5rem 5vw 4rem; } .hero h1 { font-size:3.8rem; } .hero-lead { font-size:1.05rem; } .vertical-word { display:none; } .problem-grid, .method, .expert, .offer, .bumps, .faq { padding-left:5vw; padding-right:5vw; } .principles, .deliverable-grid, .plans { grid-template-columns:1fr; } .deliverables { padding-left:5vw; padding-right:5vw; } .deliverable-grid { margin-top:2.5rem; } .plan { padding:1.5rem; } .guarantee { grid-template-columns:1fr; padding-left:5vw; padding-right:5vw; } footer { flex-direction:column; align-items:flex-start; padding:2.5rem 5vw; } footer small { text-align:left; } }
+@media (max-width: 900px) { .site-header nav { display:none; } .hero { grid-template-columns:1fr; padding:5rem 7vw; } .hero-visual { justify-self:stretch; max-width:540px; margin:1rem auto 0; } .statement, .problem-grid, .method, .expert, .offer, .bumps, .faq { grid-template-columns:1fr; padding:5.5rem 7vw; gap:3rem; } .statement { grid-template-columns:40px 1fr; } .statement-aside { grid-column:2; } .method-image, .expert-photo { justify-self:start; max-width:500px; } .deliverables { padding:5.5rem 7vw; } .deliverables-head { display:block; } .deliverables-head > p { margin-top:1rem; } .guarantee { padding:5rem 7vw; } .testimonials { padding:5.5rem 7vw; } }
+@media (max-width: 600px) { .topline span:last-child { display:none; } .site-header { padding:0 5vw; } .header-cta { padding:.7rem .8rem; font-size:.65rem; } .hero { padding:4.5rem 5vw 4rem; } .hero h1 { font-size:3.8rem; } .hero-lead { font-size:1.05rem; } .vertical-word { display:none; } .problem-grid, .method, .expert, .offer, .bumps, .faq { padding-left:5vw; padding-right:5vw; } .principles, .deliverable-grid, .plans, .testimonials-grid { grid-template-columns:1fr; } .testimonials { padding-left:5vw; padding-right:5vw; } .deliverables { padding-left:5vw; padding-right:5vw; } .deliverable-grid { margin-top:2.5rem; } .plan { padding:1.5rem; } .guarantee { grid-template-columns:1fr; padding-left:5vw; padding-right:5vw; } footer { flex-direction:column; align-items:flex-start; padding:2.5rem 5vw; } footer small { text-align:left; } }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior:auto; } *, *::before, *::after { transition-duration:.01ms !important; animation-duration:.01ms !important; } }

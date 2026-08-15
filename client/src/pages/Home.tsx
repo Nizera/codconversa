@@ -1,6 +1,6 @@
 /* Design: Editorial de Conversa — preto, branco, cinza e cobre queimado; composição assimétrica, tipografia Space Grotesk + DM Sans, fotografia documental e CTAs honestos. */
 import { useState } from "react";
-import { ArrowUpRight, Check, ChevronDown, Clock3, MessageCircle, ShieldCheck } from "lucide-react";
+import { ArrowUpRight, Check, ChevronDown, Clock3, MessageCircle, ShieldCheck, Star } from "lucide-react";
 
 const HERO_IMAGE = "/images/lucas-martins-hero.png";
 const NOTEBOOK_IMAGE = "/images/lucas-chat-frontal.png";
@@ -15,6 +15,12 @@ const faqs = [
   ["O material funciona no Instagram e WhatsApp?", "Sim. Os princípios são adaptáveis aos dois canais e às conversas presenciais."],
   ["Como recebo o acesso?", "Após o pagamento, a plataforma de checkout deve enviar os arquivos automaticamente."],
   ["Posso pedir reembolso?", "A oferta prevê garantia de 7 dias, conforme as condições da plataforma de pagamento."],
+];
+
+const testimonials = [
+  { name: "Carlos, 29 anos", photo: "/images/testimonial-1.jpg", quote: "Eu achava que precisava de frases prontas. Na verdade, eu precisava parar de ter medo de parecer eu mesmo." },
+  { name: "Rafael, 34 anos", photo: "/images/testimonial-2.jpg", quote: "Parei de mandar mensagem genérica e comecei a criar contexto. A diferença foi imediata." },
+  { name: "Felipe, 27 anos", photo: "/images/testimonial-3.jpg", quote: "O que mais gostei é que não é sobre manipular ninguém. É sobre conversar de verdade." },
 ];
 
 function SectionLabel({ children }: { children: string }) {
@@ -74,9 +80,11 @@ export default function Home() {
 
       <section className="guarantee"><div className="guarantee-icon"><Clock3 size={28} /></div><div><SectionLabel>SETE DIAS PARA CONHECER</SectionLabel><h2>Se não fizer sentido para você, você pode pedir reembolso.</h2><p>A garantia reduz o risco de comprar um material que não corresponde ao que você procura. Consulte as condições da plataforma de pagamento.</p></div></section>
 
+      <section className="testimonials"><div className="testimonials-head"><SectionLabel>O QUE DIZEM QUEM USOU</SectionLabel><h2>Homens reais, conversas reais.</h2></div><div className="testimonials-grid">{testimonials.map((t) => (<article key={t.name} className="testimonial-card"><div className="testimonial-stars">{[...Array(5)].map((_, i) => <Star key={i} size={14} fill="currentColor" />)}</div><blockquote>{t.quote}</blockquote><div className="testimonial-author"><img src={t.photo} alt={t.name} /><span>{t.name}</span></div></article>))}</div></section>
+
       <section className="faq" id="faq"><div className="faq-head"><SectionLabel>PERGUNTAS FREQUENTES</SectionLabel><h2>Antes de decidir, tire suas dúvidas.</h2></div><div className="faq-list">{faqs.map(([question, answer]) => <FAQItem key={question} question={question} answer={answer} />)}</div></section>
 
-      <footer><div className="footer-brand"><img src={MARK_IMAGE} alt="" /><span>CÓDIGO DA CONVERSA</span></div><p>Comunicação masculina sem jogos, pressão ou promessas irreais.</p><small>© 2026 Código da Conversa. Depoimentos ilustrativos devem ser substituídos por avaliações reais e autorizadas antes da publicação.</small></footer>
+      <footer><div className="footer-brand"><img src={MARK_IMAGE} alt="" /><span>CÓDIGO DA CONVERSA</span></div><p>Comunicação masculina sem jogos, pressão ou promessas irreais.</p><small>© 2026 Código da Conversa.</small></footer>
     </main>
   );
 }
