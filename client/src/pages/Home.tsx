@@ -40,14 +40,15 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
 }
 
 export default function Home() {
-  const checkout = "#oferta";
+  const checkoutBasico = "https://www.flowyn.com.br/r/4e41338e-b401-4d82-8f91-882f0cd322d0?dest=/checkout/5b5b6539-c487-4fed-a64d-0209337cbb65";
+  const checkoutPremium = "https://www.flowyn.com.br/r/4e41338e-b401-4d82-8f91-882f0cd322d0?dest=/checkout/735d3f83-fdca-4152-881c-97f52be45089";
   return (
     <main>
       <div className="topline"><span>CÓDIGO DA CONVERSA / MÉTODO PRÁTICO</span><span>COMUNICAÇÃO SEM JOGOS</span></div>
       <header className="site-header">
         <a className="brand" href="#top" aria-label="Código da Conversa"><img src={MARK_IMAGE} alt="" /><span>CÓDIGO<br /><b>DA CONVERSA</b></span></a>
         <nav><a href="#metodo">O método</a><a href="#entrega">O que você recebe</a><a href="#faq">Dúvidas</a></nav>
-        <a className="header-cta" href={checkout}>Ver planos <ArrowUpRight size={16} /></a>
+        <a className="header-cta" href={checkoutBasico}>Ver planos <ArrowUpRight size={16} /></a>
       </header>
 
       <section className="hero" id="top">
@@ -56,7 +57,7 @@ export default function Home() {
           <h1>Conversa não é <em>entrevista.</em></h1>
           <p className="hero-lead">As mensagens que fazem uma mulher continuar interessada sem você precisar fingir ser alguém que não é.</p>
           <p className="hero-body">Aprenda a criar contexto, mostrar personalidade e conduzir uma conversa com mais clareza — sem manipulação, sem pressão e sem procurar a frase perfeita.</p>
-          <div className="hero-actions"><a className="button button-dark" href={checkout}>Quero conversar melhor <ArrowUpRight size={17} /></a><span><ShieldCheck size={17} /> Garantia de 7 dias</span></div>
+          <div className="hero-actions"><a className="button button-dark" href={checkoutBasico}>Quero conversar melhor <ArrowUpRight size={17} /></a><span><ShieldCheck size={17} /> Garantia de 7 dias</span></div>
           <div className="hero-note"><span>01</span><p>Para homens comuns que querem trocar ansiedade por presença.</p></div>
         </div>
         <div className="hero-visual"><div className="image-frame"><img src={HERO_IMAGE} alt="Lucas Martins sentado em um escritório simples" /><div className="image-caption"><span>LUCAS MARTINS</span></div></div><div className="vertical-word">CLAREZA / PRESENÇA / RESPEITO</div></div>
@@ -74,7 +75,7 @@ export default function Home() {
 
       <section className="deliverables" id="entrega"><div className="deliverables-head"><SectionLabel>O QUE VOCÊ RECEBE</SectionLabel><h2>Um mapa para sair do automático.</h2><p>Conteúdo direto, exercícios simples e modelos que você adapta ao contexto — não um personagem para interpretar.</p></div><div className="deliverable-grid"><article><span className="card-number">01</span><h3>Código da Conversa</h3><p>O ebook principal com sete capítulos sobre ritmo, curiosidade, respostas secas e convites claros.</p><span className="card-meta">PDF / 7 CAPÍTULOS</span></article><article><span className="card-number">02</span><h3>100 Mensagens Prontas</h3><p>Ideias divididas por primeira conversa, Instagram, WhatsApp, curiosidade, flerte leve e encontro.</p><span className="card-meta">BÔNUS / 100 EXEMPLOS</span></article><article><span className="card-number">03</span><h3>20 Respostas para Visualização</h3><p>Como fazer uma retomada sem cobrança e reconhecer quando é hora de parar.</p><span className="card-meta">BÔNUS / GUIA RÁPIDO</span></article></div></section>
 
-      <section className="offer" id="oferta"><div className="offer-intro"><SectionLabel>ESCOLHA SEU PONTO DE PARTIDA</SectionLabel><h2>Comece pela conversa que você quer construir.</h2><p>Dois planos, sem urgência artificial. Escolha o nível de aprofundamento que faz sentido para o seu momento.</p></div><div className="plans"><article className="plan"><span className="plan-label">PLANO BÁSICO</span><h3>Código da Conversa</h3><p className="plan-desc">O método essencial para mensagens e interações mais naturais.</p><div className="price"><small>R$</small>14<sup>90</sup></div><ul><li><Check size={17} /> Ebook principal</li><li><Check size={17} /> 100 mensagens prontas</li><li><Check size={17} /> 20 respostas para visualização</li></ul><a className="button button-outline" href="#checkout-basico">Escolher Básico <ArrowUpRight size={16} /></a></article><article className="plan plan-featured"><span className="plan-label">PLANO PREMIUM</span><h3>Protocolo Anti-Rejeição</h3><p className="plan-desc">Tudo do básico + um treinamento para agir com mais confiança e respeitar seus próprios limites.</p><div className="price"><small>R$</small>27<sup>90</sup></div><ul><li><Check size={17} /> Tudo do Plano Básico</li><li><Check size={17} /> 6 módulos adicionais</li><li><Check size={17} /> Desafio de confiança de 7 dias</li></ul><a className="button button-copper" href="#checkout-premium">Escolher Premium <ArrowUpRight size={16} /></a></article></div></section>
+      <section className="offer" id="oferta"><div className="offer-intro"><SectionLabel>ESCOLHA SEU PONTO DE PARTIDA</SectionLabel><h2>Comece pela conversa que você quer construir.</h2><p>Dois planos, sem urgência artificial. Escolha o nível de aprofundamento que faz sentido para o seu momento.</p></div><div className="plans"><article className="plan"><span className="plan-label">PLANO BÁSICO</span><h3>Código da Conversa</h3><p className="plan-desc">O método essencial para mensagens e interações mais naturais.</p><div className="price"><small>R$</small>14<sup>90</sup></div><ul><li><Check size={17} /> Ebook principal</li><li><Check size={17} /> 100 mensagens prontas</li><li><Check size={17} /> 20 respostas para visualização</li></ul><a className="button button-outline" href={checkoutBasico}>Escolher Básico <ArrowUpRight size={16} /></a></article><article className="plan plan-featured"><span className="plan-label">PLANO PREMIUM</span><h3>Protocolo Anti-Rejeição</h3><p className="plan-desc">Tudo do básico + um treinamento para agir com mais confiança e respeitar seus próprios limites.</p><div className="price"><small>R$</small>27<sup>90</sup></div><ul><li><Check size={17} /> Tudo do Plano Básico</li><li><Check size={17} /> 6 módulos adicionais</li><li><Check size={17} /> Desafio de confiança de 7 dias</li></ul><a className="button button-copper" href={checkoutPremium}>Escolher Premium <ArrowUpRight size={16} /></a></article></div></section>
 
       <section className="bumps"><div><SectionLabel>COMPLEMENTOS OPCIONAIS</SectionLabel><h2>Se quiser aprofundar, há mais três ferramentas.</h2></div><div className="bump-list"><div><span>+01</span><div><b>Biblioteca de Primeiras Mensagens</b><p>150 aberturas por canal. <strong>R$ 9,90</strong></p></div></div><div><span>+02</span><div><b>Detector de Interesse</b><p>Sinais para interpretar com mais calma. <strong>R$ 12,90</strong></p></div></div><div><span>+03</span><div><b>Arsenal de Respostas</b><p>300 respostas para situações comuns. <strong>R$ 14,90</strong></p></div></div></div></section>
 
