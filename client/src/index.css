@@ -59,7 +59,7 @@ main { overflow: hidden; }
 .problem-list p { grid-column:2; margin:.3rem 0 0; color:#74736e; font-size:.88rem; line-height:1.5; }
 .method { display:grid; grid-template-columns:.9fr 1.1fr; gap:8vw; padding:9rem 12vw; background:#f6f5f1; align-items:center; }
 .method-image { position:relative; max-width:470px; }
-.method-image img { display:block; width:100%; aspect-ratio:3/2; object-fit:cover; filter:grayscale(1); }
+.method-image img { display:block; width:100%; aspect-ratio:4/5; object-fit:cover; filter:grayscale(1); }
 .photo-tag { position:absolute; right:-1.2rem; bottom:-1.2rem; padding:1.05rem; background:#b66a4c; color:white; font:700 .68rem/1.4 'Space Grotesk',sans-serif; letter-spacing:.12em; }
 .method-copy > p, .expert-copy > p, .deliverables-head > p, .offer-intro > p, .guarantee p { color:#74736e; line-height:1.7; max-width:520px; margin-top:1.5rem; }
 .principles { margin-top:2.5rem; display:grid; grid-template-columns:1fr 1fr; gap:1.4rem 2rem; }
