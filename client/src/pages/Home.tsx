@@ -40,8 +40,8 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
 }
 
 export default function Home() {
-  const checkoutBasico = "https://www.flowyn.com.br/r/4e41338e-b401-4d82-8f91-882f0cd322d0?dest=/checkout/5b5b6539-c487-4fed-a64d-0209337cbb65";
-  const checkoutPremium = "https://www.flowyn.com.br/r/4e41338e-b401-4d82-8f91-882f0cd322d0?dest=/checkout/735d3f83-fdca-4152-881c-97f52be45089";
+  const checkoutBasico = "https://www.flowyn.com.br/r/c3e66627-b57f-41c6-8da6-931af7278605?dest=/checkout/5b5b6539-c487-4fed-a64d-0209337cbb65";
+  const checkoutPremium = "https://www.flowyn.com.br/r/c3e66627-b57f-41c6-8da6-931af7278605?dest=/checkout/735d3f83-fdca-4152-881c-97f52be45089";
   return (
     <main>
       <div className="topline"><span>CÓDIGO DA CONVERSA / MÉTODO PRÁTICO</span><span>COMUNICAÇÃO SEM JOGOS</span></div>
