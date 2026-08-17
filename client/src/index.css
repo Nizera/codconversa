@@ -96,8 +96,8 @@ main { overflow: hidden; }
 .plan-desc { min-height:64px; color:#77756f; font-size:.85rem; line-height:1.5; }
 .plan-featured .plan-desc { color:#aaa8a1; }
 .price { margin:1.8rem 0; font:700 4.2rem/1 'Space Grotesk',sans-serif; letter-spacing:-.1em; }
-.price small { font-size:.9rem; letter-spacing:0; vertical-align:top; margin-right:.2rem; color:#74736e; text-decoration:line-through; }
-.price small:last-of-type { text-decoration:none; color:#171717; }
+.price small { font-size:.9rem; letter-spacing:0; vertical-align:top; margin-right:.2rem; }
+.price-old { color:#999; text-decoration:line-through; }
 .price sup { font-size:1.25rem; letter-spacing:-.04em; vertical-align:top; }
 .plan ul { list-style:none; padding:0; margin:0 0 2rem; display:flex; flex-direction:column; gap:.8rem; color:#5f5d58; font-size:.82rem; }
 .plan-featured ul { color:#c9c7c0; }
@@ -166,3 +166,29 @@ footer small { max-width:350px; line-height:1.45; text-align:right; }
 .chat-input button:hover:not(:disabled) { background:#b66a4c; }
 .chat-input button:disabled { opacity:.4; cursor:not-allowed; }
 @media (max-width: 480px) { .chat-container { width:calc(100vw - 2rem); right:-.5rem; } }
+
+/* Hero Counter */
+.hero-counter { display:flex; align-items:center; gap:.6rem; margin-top:1.5rem; color:#5a5854; font-size:.85rem; }
+.hero-counter svg { color:#b66a4c; }
+.hero-counter strong { color:#121212; font-weight:700; }
+
+/* Inline CTA */
+.cta-inline { display:flex; justify-content:center; padding:3rem 4vw; background:#f6f5f1; }
+
+/* Offer Urgency */
+.offer-urgency { display:flex; align-items:center; justify-content:center; gap:.5rem; padding:.8rem 1.5rem; background:#b66a4c; color:#fff; font:600 .78rem 'Space Grotesk',sans-serif; letter-spacing:.08em; margin-bottom:2rem; }
+.offer-urgency svg { animation:pulse 2s ease-in-out infinite; }
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.6} }
+
+/* Price Old */
+.price-old { color:#999; text-decoration:line-through; font-size:.9rem; font-weight:400; }
+
+/* Offer Note */
+.offer-note { display:flex; align-items:center; justify-content:center; gap:.5rem; margin-top:2rem; color:#74736e; font-size:.82rem; text-align:center; }
+.offer-note svg { color:#b66a4c; }
+
+/* CTA Final */
+.cta-final { display:flex; flex-direction:column; align-items:center; text-align:center; padding:5rem 4vw; background:#121212; color:#f6f5f1; }
+.cta-final h2 { margin:0 0 .8rem; font:600 clamp(2rem,4vw,3.2rem)/1.05 'Space Grotesk',sans-serif; letter-spacing:-.05em; }
+.cta-final p { margin:0 0 2rem; color:#a6a49e; font-size:1rem; }
+.cta-final .button { font-size:.8rem; padding:1.1rem 1.8rem; }
