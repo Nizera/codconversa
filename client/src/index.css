@@ -96,7 +96,8 @@ main { overflow: hidden; }
 .plan-desc { min-height:64px; color:#77756f; font-size:.85rem; line-height:1.5; }
 .plan-featured .plan-desc { color:#aaa8a1; }
 .price { margin:1.8rem 0; font:700 4.2rem/1 'Space Grotesk',sans-serif; letter-spacing:-.1em; }
-.price small { font-size:1rem; letter-spacing:0; vertical-align:top; margin-right:.2rem; }
+.price small { font-size:.9rem; letter-spacing:0; vertical-align:top; margin-right:.2rem; color:#74736e; text-decoration:line-through; }
+.price small:last-of-type { text-decoration:none; color:#171717; }
 .price sup { font-size:1.25rem; letter-spacing:-.04em; vertical-align:top; }
 .plan ul { list-style:none; padding:0; margin:0 0 2rem; display:flex; flex-direction:column; gap:.8rem; color:#5f5d58; font-size:.82rem; }
 .plan-featured ul { color:#c9c7c0; }
