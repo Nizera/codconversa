@@ -85,9 +85,11 @@ main { overflow: hidden; }
 .deliverable-grid h3 { margin:4rem 0 .8rem; font:600 1.45rem 'Space Grotesk',sans-serif; letter-spacing:-.04em; }
 .deliverable-grid p { color:#74736e; line-height:1.55; font-size:.88rem; margin:0; }
 .card-meta { margin-top:auto; color:#a06046; font:700 .62rem 'Space Grotesk',sans-serif; letter-spacing:.15em; }
-.offer { display:grid; grid-template-columns:.75fr 1.25fr; gap:7vw; padding:9rem 12vw; background:#f6f5f1; }
+.offer { display:grid; grid-template-columns:1fr; gap:1.5rem; padding:5rem 8vw; background:#f6f5f1; max-width:900px; margin:0 auto; }
+.offer-intro { text-align:center; }
+.offer-intro h2 { max-width:600px; margin:0 auto; }
 .offer-intro h2 { max-width:450px; }
-.plans { display:grid; grid-template-columns:1fr 1fr; gap:1rem; align-items:stretch; }
+.plans { display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; align-items:stretch; max-width:750px; margin:0 auto; }
 .plan { position:relative; display:flex; flex-direction:column; padding:2.4rem 2rem 2rem; border:1px solid #cccac1; background:#ecebe5; border-top:3px solid #171717; }
 .plan-featured { background:#121212; color:#f6f5f1; border-color:#121212; border-top-color:#b66a4c; }
 .featured-mark { position:absolute; top:-1px; right:0; padding:.55rem .75rem; background:transparent; color:#b66a4c; display:flex; gap:.35rem; align-items:center; font:700 .61rem 'Space Grotesk',sans-serif; letter-spacing:.12em; }
