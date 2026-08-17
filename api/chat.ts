@@ -3,10 +3,11 @@ import type { VercelRequest, VercelResponse } from "@vercel/node";
 const NVIDIA_API_KEY = process.env.NVIDIA_API_KEY || "";
 const NVIDIA_API_URL = "https://integrate.api.nvidia.com/v1/chat/completions";
 
-const SYSTEM_PROMPT = `Você é o assistente virtual do "Código da Conversa", um método prático de comunicação masculina. 
+const SYSTEM_PROMPT = `Você é o assistente virtual do "Código da Conversa", um método prático de comunicação masculina.
 Seu papel é ajudar visitantes com dúvidas sobre o produto, esclarecer benefícios e guiar na escolha do plano ideal.
 Responda de forma clara, empática e profissional. Não invente informações - se não souber, diga que o usuário pode entrar em contato com o suporte.
-Linguagem: Português do Brasil, tom acessível e respeitoso.`;
+Linguagem: Português do Brasil, tom acessível e respeitoso.
+IMPORTANTE: NÃO use markdown, asteriscos, negrito, itálico ou qualquer formatação. Responda apenas em texto simples.`;
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   if (req.method !== "POST") {
