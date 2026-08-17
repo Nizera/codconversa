@@ -1,6 +1,7 @@
 /* Design: Editorial de Conversa — preto, branco, cinza e cobre queimado; composição assimétrica, tipografia Space Grotesk + DM Sans, fotografia documental e CTAs honestos. */
 import { useState } from "react";
 import { ArrowUpRight, Check, ChevronDown, Clock3, MessageCircle, ShieldCheck, Star } from "lucide-react";
+import ChatWidget from "@/components/ChatWidget";
 
 const HERO_IMAGE = "/images/lucas-martins-hero.png";
 const NOTEBOOK_IMAGE = "/images/lucas-chat-frontal.png";
@@ -86,6 +87,8 @@ export default function Home() {
       <section className="faq" id="faq"><div className="faq-head"><SectionLabel>PERGUNTAS FREQUENTES</SectionLabel><h2>Antes de decidir, tire suas dúvidas.</h2></div><div className="faq-list">{faqs.map(([question, answer]) => <FAQItem key={question} question={question} answer={answer} />)}</div></section>
 
       <footer><div className="footer-brand"><img src={MARK_IMAGE} alt="" /><span>CÓDIGO DA CONVERSA</span></div><p>Comunicação masculina sem jogos, pressão ou promessas irreais.</p><small>© 2026 Código da Conversa.</small></footer>
+
+      <ChatWidget />
     </main>
   );
 }
