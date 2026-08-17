@@ -54,12 +54,12 @@ export default function Home() {
 
       <section className="hero" id="top">
         <div className="hero-copy">
-          <SectionLabel>UM GUIA PARA CONVERSAS REAIS</SectionLabel>
-          <h1>Conversa não é <em>entrevista.</em></h1>
-          <p className="hero-lead">As mensagens que fazem uma mulher continuar interessada sem você precisar fingir ser alguém que não é.</p>
-          <p className="hero-body">Aprenda a criar contexto, mostrar personalidade e conduzir uma conversa com mais clareza — sem manipulação, sem pressão e sem procurar a frase perfeita.</p>
-          <div className="hero-actions"><a className="button button-dark" href="#oferta">Quero conversar melhor <ArrowUpRight size={17} /></a><span><ShieldCheck size={17} /> Garantia de 7 dias</span></div>
-          <div className="hero-note"><span>01</span><p>Para homens comuns que querem trocar ansiedade por presença.</p></div>
+          <SectionLabel>MÉTODO PRÁTICO DE COMUNICAÇÃO</SectionLabel>
+          <h1>Sua mensagem finalmente vai ter <em>resposta.</em></h1>
+          <p className="hero-lead">Pare de ser ignorado. Aprenda a conversar de um jeito que ela queira continuar respondendo.</p>
+          <p className="hero-body">Um método simples para você parar de mandar mensagem genérica e começar a criar conexão de verdade — sem precisar ser outro alguém.</p>
+          <div className="hero-actions"><a className="button button-dark" href="#oferta">Quero parar de ser ignorado <ArrowUpRight size={17} /></a><span><ShieldCheck size={17} /> Garantia de 7 dias</span></div>
+          <div className="hero-note"><span>01</span><p>Funciona para qualquer homem, em qualquer contexto.</p></div>
         </div>
         <div className="hero-visual"><div className="image-frame"><img src={HERO_IMAGE} alt="Lucas Martins sentado em um escritório simples" /><div className="image-caption"><span>LUCAS MARTINS</span></div></div><div className="vertical-word">CLAREZA / PRESENÇA / RESPEITO</div></div>
       </section>
